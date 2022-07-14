@@ -1,4 +1,4 @@
-# Getting Started ghouls
+# Getting Started with Ghouls
 
 ## Available Scripts
 
