@@ -22,6 +22,7 @@ html body {
 
 .primary-button:hover {
   background: linear-gradient(260deg, #fe3072, #ff5940);
+  cursor: pointer;
 }
 /* Nav */
 
@@ -39,6 +40,12 @@ nav .nav-button {
   border-radius: 10px;
   border: none;
   margin: 10px;
+  cursor: pointer;
+}
+
+nav .nav-button:disabled {
+  background-color: darkgrey;
+  color: rgb(254, 48, 114);
 }
 
 nav .logo-container {
@@ -48,8 +55,12 @@ nav .logo-container {
 
 .logo {
   width: 100px;
+  padding: .5rem;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
 
 /* overlay */
 
@@ -59,6 +70,24 @@ nav .logo-container {
   position: fixed;
   background: linear-gradient(
     to bottom,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0) 100%);
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+/* auth-modal */
+
+.auth-modal {
+  position: center;
+  top: 175px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  height: 600px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.auth-modal .close-icon {
+  float: right;
 }
