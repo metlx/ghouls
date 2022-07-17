@@ -90,4 +90,5 @@ nav .logo-container {
 
 .auth-modal .close-icon {
   float: right;
+  cursor: pointer;
 }
