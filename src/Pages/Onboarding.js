@@ -149,16 +149,34 @@ const Onboarding = () => {
 
                         </div>
 
-                        <label htmlFor="more-gender-interest">Everyone</label>
+                        <label htmlFor="about">About me</label>
                         <input
-                            id=""
-                            type=""
-                            name=""
+                            id="about"
+                            type="text"
+                            name="about"
                             required={true}
                             placeholder="I like long walks..."
                             value={""}
                             onChange={handleChange}
                         />
+                        <input
+                            type="submit"
+                        />
+
+                    </section>
+
+                    <section>
+                        <label htmlFor="about">Profile Profile</label>
+                        <input
+                            type="url"
+                            name="url"
+                            id="url"
+                            onChange={handleChange}
+                            required={true}
+                        />
+                        <div className="photo-container">
+
+                        </div>
 
                     </section>
                 </form>
